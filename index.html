@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal OSI - O Sumiço do Pacote</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="terminal-container">
+        <header>
+            <h1>Simulador OSI: Rastreamento de Requisição</h1>
+            <p>Pressione <strong>Enter</strong> ou clique no botão para avançar pelas camadas.</p>
+        </header>
+
+        <!-- Região acessível que o leitor de tela (NVDA/JAWS) vai ler automaticamente -->
+        <section id="terminal-log" role="log" aria-live="polite" aria-atomic="false">
+            <p class="system-msg">>>> Sistema Iniciado. Aguardando comando de transmissão...</p>
+        </section>
+
+        <div class="controls">
+            <button id="btn-next">Avançar Camada (Enter)</button>
+            <button id="btn-reset">Reiniciar (R)</button>
+            <button id="btn-sound">Som: Ligado</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
